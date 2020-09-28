@@ -354,10 +354,7 @@ export default {
         this.Power=getBtnPermisssionArr.toString().replace(/,/g,'');
         console.log(this.Power)
         console.log(permission)
-        console.log(getBtnPermisssionArr) //["a", "b", "c", "d", "e", "f"]
-
-        console.log(getBtnPermisssionArr.indexOf(permission)>-1)  //true
-        return getBtnPermisssionArr.indexOf(permission)>-1;
+        
        },
 
 

@@ -141,7 +141,10 @@
 					<van-row style="text-align:center">  
 						<van-col span="8">{{item.roughWeight }}吨</van-col>
 						<van-col span="8">{{item.suttleWeight }}吨</van-col>
-						<van-col span="6" :class="{redcolor:index > 0 ? form.getHaulwayTaskWeightRecordInfoDto[index].suttleWeight - form.getHaulwayTaskWeightRecordInfoDto[index - 1].suttleWeight : ''<0}">
+						<van-col span="6" 
+            :class="{redcolor:index > 0 ? 
+            form.getHaulwayTaskWeightRecordInfoDto[index].suttleWeight - 
+            form.getHaulwayTaskWeightRecordInfoDto[index - 1].suttleWeight : ''<0}">
 						  {{ index > 0 ? form.getHaulwayTaskWeightRecordInfoDto[index].suttleWeight - form.getHaulwayTaskWeightRecordInfoDto[index - 1].suttleWeight : ''}} 
 						</van-col>
 					</van-row>
@@ -301,10 +304,7 @@ export default {
         this.Power=getBtnPermisssionArr.toString().replace(/,/g,'');
         console.log(this.Power)
         console.log(permission)
-        console.log(getBtnPermisssionArr) //["a", "b", "c", "d", "e", "f"]
-
-        console.log(getBtnPermisssionArr.indexOf(permission)>-1)  //true
-        return getBtnPermisssionArr.indexOf(permission)>-1;
+      
     },
 
     tophone(){

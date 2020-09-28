@@ -426,7 +426,7 @@ export default {
 			this.$router.push({path : '/DriverLog',query : {id : this.form.id}});
 		} else {
 			this.$router.push('/DriverList');
-		}
+		 }
     },
     deletephoto() {
       this.imageList = [];
